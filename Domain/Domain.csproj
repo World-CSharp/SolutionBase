@@ -40,7 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Aproaches.cs" />
+    <Compile Include="Entities\DetailedApproaches.cs" />
     <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\Label.cs" />
+    <Compile Include="Entities\Organization.cs" />
+    <Compile Include="Entities\Project.cs" />
+    <Compile Include="Entities\StateApproaches.cs" />
+    <Compile Include="Entities\StateDetailApproaches.cs" />
+    <Compile Include="Entities\TypeSolution.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\IRepositoryUser.cs" />
