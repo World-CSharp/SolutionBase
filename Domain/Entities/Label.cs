@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace Domain.Entities
 {
    public  class Label:EntityBase
-    {        
+    {
+        public Label()
+        {
+
+        }
+
         public string Description { get; set; }
         public string Comment { get; set; }
 

@@ -8,6 +8,14 @@ namespace Domain.Entities
 {
     public class TypeSolution : EntityBase
     {
-        public string Description { get; set; }        
+        public TypeSolution()
+        {
+
+        }
+
+        public string Description { get; set; }
+
+        public List<Aproaches> Aproaches { get; set; }
+
     }
 }

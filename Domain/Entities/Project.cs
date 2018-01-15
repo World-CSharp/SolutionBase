@@ -8,8 +8,15 @@ namespace Domain.Entities
 {
     public class Project:EntityBase
     {
-        public int IdOrganization { get; set; }
+        public Project()
+        {
+
+        }
+
+        //public int IdOrganization { get; set; }
         public string Description { get; set; }
         public string Comment { get; set; }
+        
+        public Organization Organization { get; set; }
     }
 }
