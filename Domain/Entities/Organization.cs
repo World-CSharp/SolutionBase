@@ -7,11 +7,7 @@ using System.Threading.Tasks;
 namespace Domain.Entities
 {
     public class Organization:EntityBase
-    {
-        public Organization()
-        {
-
-        }
+    {       
 
         public string Description { get; set; }
         public string Slogan { get; set; }

@@ -8,14 +8,9 @@ namespace Domain.Entities
 {
     public class DetailedApproaches:EntityBase
     {
-        public DetailedApproaches()
-        {
+       
 
-        }
-
-        public int IdUser { get; set; }
-        //public int IdAproaches{ get; set; }
-        //public int IdStateDetailApproaches { get; set; }
+        public int UserId { get; set; }
         public string Comment { get; set; }
         public int PositivePoint { get; set; }
         public int NegativePoint { get; set; }

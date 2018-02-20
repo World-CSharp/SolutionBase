@@ -8,13 +8,9 @@ namespace Domain.Entities
 {
     public class Aproaches : EntityBase
     {        
-        public Aproaches()
-        {
-
-        }
-
-        public int IdStateApproaches { get; set; }
-        public int IdTypeSolution { get; set; }
+       
+        public int StateApproachesId { get; set; }
+        public int TypeSolutionId { get; set; }
         public string Topic { get; set; }
         public string Description { get; set; }
         public string Label { get; set; }

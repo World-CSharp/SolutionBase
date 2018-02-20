@@ -110,11 +110,11 @@
                 .HasMaxLength(200)
                 .IsOptional();
             modelBuilder.Entity<Organization>()
-                .Property(x => x.Registered_By)
+                .Property(x => x.RegisteredBy)
                 .HasMaxLength(30)
                 .IsRequired();
             modelBuilder.Entity<Organization>()
-                .Property(x => x.Registered_On)
+                .Property(x => x.RegisteredOn)
                 .IsRequired();
 
             #endregion Organization
@@ -135,11 +135,11 @@
                 .IsOptional()
                 .HasMaxLength(100);
             modelBuilder.Entity<Label>()
-                .Property(x => x.Registered_By)
+                .Property(x => x.RegisteredBy)
                 .IsRequired()
                 .HasMaxLength(30);
             modelBuilder.Entity<Label>()
-                .Property(x => x.Registered_On)
+                .Property(x => x.RegisteredOn)
                 .IsRequired();
 
             #endregion Label
@@ -167,11 +167,11 @@
                 .IsOptional();
 
             modelBuilder.Entity<Project>()
-                .Property(x => x.Registered_By)
+                .Property(x => x.RegisteredBy)
                 .HasMaxLength(30)
                 .IsRequired();
             modelBuilder.Entity<Project>()
-                .Property(x => x.Registered_On)
+                .Property(x => x.RegisteredOn)
                 .IsRequired();
 
             #endregion Project
@@ -210,11 +210,11 @@
                 .Property(x => x.Date)
                 .IsRequired();
             modelBuilder.Entity<Aproaches>()
-               .Property(x => x.Registered_By)
+               .Property(x => x.RegisteredBy)
                .HasMaxLength(30)
                .IsRequired();
             modelBuilder.Entity<Aproaches>()
-                .Property(x => x.Registered_On)
+                .Property(x => x.RegisteredOn)
                 .IsRequired();
 
             #endregion Aproaches
@@ -235,7 +235,7 @@
             //Configurando las propiedades de las entidades(Campos de las columnas)
             //Configuración Table Label 
             modelBuilder.Entity<DetailedApproaches>()
-                .Property(x => x.IdUser)
+                .Property(x => x.UserId)
                 .IsRequired();
             modelBuilder.Entity<DetailedApproaches>()
                 .Property(x => x.Comment)
@@ -248,11 +248,11 @@
                 .Property(x => x.NegativePoint)
                 .IsOptional();
             modelBuilder.Entity<DetailedApproaches>()
-                .Property(x => x.Registered_By)
+                .Property(x => x.RegisteredBy)
                 .HasMaxLength(30)
                 .IsRequired();
             modelBuilder.Entity<Aproaches>()
-                .Property(x => x.Registered_On)
+                .Property(x => x.RegisteredOn)
                 .IsRequired();
 
             #endregion DetailedApproaches

@@ -8,11 +8,7 @@ namespace Domain.Entities
 {
     public class StateDetailApproaches:EntityBase
     {
-        public StateDetailApproaches()
-        {
-
-        }
-
+       
         public string Description { get; set; }        
         public List<DetailedApproaches> DetailedApproaches { get; set; }
     }
